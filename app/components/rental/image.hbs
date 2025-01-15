@@ -1,4 +1,12 @@
-<div class="image">
-  <img ...attributes />
-  {{! ...attributes is a syntax which means that HTML attributes will be forwarded from parent component }}
-</div>
+{{#if this.isLarge}}
+  <button type="button" class="image large" {{on "click" this.toggleSize}}>
+    <img ...attributes />
+    {{! ...attributes is a syntax which means that HTML attributes will be forwarded from parent component }}
+    <small>View Smaller</small>
+  </button>
+{{else}}
+  <button type="button" class="image" {{on "click" this.toggleSize}}>
+    <img ...attributes />
+    <small>View Larger</small>
+  </button>
+{{/if}}
