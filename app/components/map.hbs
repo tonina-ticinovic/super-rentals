@@ -1,0 +1,12 @@
+<div class="map">
+  <img
+    alt="Map image at coordinates {{@lat}},{{@lng}}"
+    ...attributes
+    src={{this.src}}
+    width={{@width}}
+    height={{@height}}
+  />
+</div>
+
+{{! this component expects lat, lng, zoom, width, height as arguments }}
+{{! since we have ...attributes, we can override anything html before that (in this case alt) }}
