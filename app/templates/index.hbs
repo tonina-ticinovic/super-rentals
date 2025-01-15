@@ -1,9 +1,8 @@
-<div class="jumbo">
-  <div class="right tomster" />
+<Jumbo>
   <h2>Welcome to Super Rentals!</h2>
   <p>We hope you find exactly what you are looking for in a place to stay.</p>
   <LinkTo @route="about" class="button">About Us</LinkTo>
-</div>
+</Jumbo>
 
 {{! LinkTo is Ember component used instead of <a></a> which avoids waiting for the server and full page refreshes. But under the hood it generates }}
 {{! The @route argument is used to specify the route that the link should transition to - it should be the name of the route (route handler name) }}
