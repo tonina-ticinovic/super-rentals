@@ -10,3 +10,14 @@
     <small>View Larger</small>
   </button>
 {{/if}}
+
+{{! This is also legit }}
+{{!-- <button
+  type="button"
+  class={{if this.isLarge "image large" "image"}}
+  {{on "click" this.toggleSize}}
+>
+  <img ...attributes />
+  {{! ...attributes is a syntax which means that HTML attributes will be forwarded from parent component }}
+  <small>View {{if this.isLarge "Smaller" "Larger"}}</small>
+</button> --}}
